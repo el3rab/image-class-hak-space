@@ -18,7 +18,7 @@ transform = transforms.Compose([
     transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])
 ])
 
-st.title("image classification - تصنيف الصورة")
+st.title("images classification -  تصنيف الصور")
 
 uploaded_file = st.file_uploader("Upload Image - ارفع الصورة", type=["jpg","png"])
 
