@@ -9,7 +9,6 @@ st.set_page_config("Amr El3RAB")
 model = models.resnet18(pretrained=True)
 model.eval()
 
-# تحميل أسماء الفئات
 classes = requests.get("https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt").text.splitlines()
 
 transform = transforms.Compose([
